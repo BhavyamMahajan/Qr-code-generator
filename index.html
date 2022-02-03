@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Qr-code generator</title>
+</head>
+<body>
+    <div class="navbar"><a href="index.html"><img src="img/qr-code.png"> <sup>Qr-generator</sup></a></div>
+    <div class="container">
+
+        <div class="box">
+            <img src="img/qr-code.png" id="temp-img" accept="image/*"><br>
+
+            <div id="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            
+            <input type="text" id="text" placeholder="enter any url,text,etc."><br>
+            <p class="line">OR</p><br>
+            <input type="file" name="" id="choose-file" onchange="loadFile(event)">
+            <button id="btn">Generate</button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
